@@ -6,12 +6,12 @@
     <title>Chat</title>
 
     <style>
-        /* Configuração geral */
+        
         body {
             font-family: Georgia, serif;
         }
 
-        /* Caixa principal do chat */
+        
         .chat {
             width: 360px;
             height: 460px;
@@ -22,14 +22,14 @@
             overflow-y: auto;
         }
 
-        /* Nome de quem enviou a mensagem */
+        
         .nome {
             color: gray;
             font-size: 12px;
             margin-left: 10px;
         }
 
-        /* Caixa das mensagens */
+      
         .mensagem {
             position: relative;
             min-height: 40px;
@@ -40,31 +40,31 @@
             overflow: auto;
         }
 
-        /* Mensagens recebidas */
+       
         .recebida {
             background-color: white;
         }
 
-        /* Mensagens enviadas */
+       
         .enviada {
             background-color: #ccffcc;
             text-align: right;
         }
 
-        /* Imagem ou avatar do usuário */
+        
         .avatar {
             font-size: 25px;
             float: left;
             margin-right: 15px;
         }
 
-        /* Avatar do próprio usuário */
+       
         .avatar-eu {
             float: right;
             margin-left: 15px;
         }
 
-        /* Horário da mensagem */
+       
         .horario {
             position: absolute;
             bottom: 3px;
@@ -87,7 +87,7 @@
             padding: 8px;
         }
 
-        /* Botão enviar */
+       
         button {
             float: right;
             margin-top: 5px;
@@ -104,10 +104,10 @@
 
 <body>
 
-    <!-- Caixa principal do chat -->
+    
     <div class="chat">
 
-        <!-- Primeira mensagem recebida -->
+        
         <div class="nome">Pedro Silva</div>
         <div class="mensagem recebida">
             <span class="avatar">👨🏻</span>
@@ -115,7 +115,7 @@
             <span class="horario">00:50</span>
         </div>
 
-        <!-- Primeira mensagem enviada -->
+       
         <div class="nome">Eu</div>
         <div class="mensagem enviada">
             <span class="avatar avatar-eu">👩🏻</span>
@@ -123,7 +123,7 @@
             <span class="horario">00:55</span>
         </div>
 
-        <!-- Segunda mensagem recebida -->
+       
         <div class="nome">Pedro Silva</div>
         <div class="mensagem recebida">
             <span class="avatar">👨🏻</span>
@@ -131,7 +131,7 @@
             <span class="horario">01:01</span>
         </div>
 
-        <!-- Segunda mensagem enviada -->
+       
         <div class="nome">Eu</div>
         <div class="mensagem enviada">
             <span class="avatar avatar-eu">👩🏻</span>
@@ -139,7 +139,7 @@
             <span class="horario">00:55</span>
         </div>
 
-        <!-- Campo para escrever mensagens -->
+       
         <div class="entrada">
             <textarea placeholder="Digite sua mensagem"></textarea>
             <button>Enviar</button>
