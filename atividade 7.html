@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+
+    <style>
+        /* Configuração geral */
+        body {
+            font-family: Georgia, serif;
+        }
+
+        /* Caixa principal do chat */
+        .chat {
+            width: 360px;
+            height: 460px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            margin: 50px auto;
+            overflow-y: auto;
+        }
+
+        /* Nome de quem enviou a mensagem */
+        .nome {
+            color: gray;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+
+        /* Caixa das mensagens */
+        .mensagem {
+            position: relative;
+            min-height: 40px;
+            padding: 12px;
+            margin-bottom: 10px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            overflow: auto;
+        }
+
+        /* Mensagens recebidas */
+        .recebida {
+            background-color: white;
+        }
+
+        /* Mensagens enviadas */
+        .enviada {
+            background-color: #ccffcc;
+            text-align: right;
+        }
+
+        /* Imagem ou avatar do usuário */
+        .avatar {
+            font-size: 25px;
+            float: left;
+            margin-right: 15px;
+        }
+
+        /* Avatar do próprio usuário */
+        .avatar-eu {
+            float: right;
+            margin-left: 15px;
+        }
+
+        /* Horário da mensagem */
+        .horario {
+            position: absolute;
+            bottom: 3px;
+            right: 10px;
+            color: gray;
+            font-size: 11px;
+        }
+
+        /* Área de digitação */
+        .entrada {
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        textarea {
+            width: 95%;
+            height: 65px;
+            resize: none;
+            padding: 8px;
+        }
+
+        /* Botão enviar */
+        button {
+            float: right;
+            margin-top: 5px;
+        }
+
+        .entrada::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Caixa principal do chat -->
+    <div class="chat">
+
+        <!-- Primeira mensagem recebida -->
+        <div class="nome">Pedro Silva</div>
+        <div class="mensagem recebida">
+            <span class="avatar">👨🏻</span>
+            Olá, tudo bem?
+            <span class="horario">00:50</span>
+        </div>
+
+        <!-- Primeira mensagem enviada -->
+        <div class="nome">Eu</div>
+        <div class="mensagem enviada">
+            <span class="avatar avatar-eu">👩🏻</span>
+            Estou bem sim, e você?
+            <span class="horario">00:55</span>
+        </div>
+
+        <!-- Segunda mensagem recebida -->
+        <div class="nome">Pedro Silva</div>
+        <div class="mensagem recebida">
+            <span class="avatar">👨🏻</span>
+            Vamos sair hoje? sabe conversar e Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <span class="horario">01:01</span>
+        </div>
+
+        <!-- Segunda mensagem enviada -->
+        <div class="nome">Eu</div>
+        <div class="mensagem enviada">
+            <span class="avatar avatar-eu">👩🏻</span>
+            Criatura .......
+            <span class="horario">00:55</span>
+        </div>
+
+        <!-- Campo para escrever mensagens -->
+        <div class="entrada">
+            <textarea placeholder="Digite sua mensagem"></textarea>
+            <button>Enviar</button>
+        </div>
+
+    </div>
+
+</body>
+</html>

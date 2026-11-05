@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 4 - CSS</title>
+</head>
+<body>
+
+    <h1>Atividade 4 – Especificidade de Seletores CSS</h1>
+
+    <h2>Item 1 – Abacaxi</h2>
+    <p>Regra aplicada: Regra 1.</p>
+    <p>Cor vermelha, pois possui apenas a tag li.</p>
+
+    <h2>Item 2 – Melão</h2>
+    <p>Regra aplicada: Regra 3.</p>
+    <p>Cor cinza, pois possui a classe fruta.</p>
+
+    <h2>Item 3 – Pera</h2>
+    <p>Regra aplicada: Regra 6.</p>
+    <p>Cor azul, pois possui o ID lip2.</p>
+
+    <h2>Item 4 – Uva</h2>
+    <p>Regra aplicada: Regra 7.</p>
+    <p>Cor laranja, pois possui o ID lip3 e a classe fruta.</p>
+
+    <h2>Item 5 – Maçã</h2>
+    <p>Regra aplicada: Regra 3.</p>
+    <p>Cor cinza, pois possui a classe fruta.</p>
+
+    <h2>Item 6 – Carne</h2>
+    <p>Regra aplicada: Regra 4.</p>
+    <p>Cor preta, pois possui a classe churras e vem depois de outro li.</p>
+
+    <h2>Item 7 – Linguiça</h2>
+    <p>Regra aplicada: Regra 4.</p>
+    <p>Cor preta, pois possui a classe churras e vem depois de outro li.</p>
+
+    <h2>Item 8 – Pão de alho</h2>
+    <p>Regra aplicada: Regra 5.</p>
+    <p>Cor magenta, pois possui a classe churras e o atributo draggable="true".</p>
+
+    <h2>Observação</h2>
+    <p>
+        A regra 8 não é aplicada, pois nenhum elemento possui o ID lip5.
+    </p>
+    
+    <h2>Hierarquia da especificidade CSS</h2>
+
+<p>1. ID (#) – maior prioridade.</p>
+<p>2. Classes (.) e atributos ([]) – prioridade intermediária.</p>
+<p>3. Elementos HTML (li, p, h1) – menor prioridade.</p>
+
+</body>
+</html>

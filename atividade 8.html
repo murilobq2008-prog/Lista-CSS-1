@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Bandeiras dos Países</title>
+
+    <style>
+
+    
+        .bandeira {
+            width: 300px;
+            height: 180px;
+            margin: 20px;
+            border: 1px solid black;
+            position: relative;
+        }
+
+        
+        a {
+            margin-right: 15px;
+        }
+
+      
+        #japao.bandeira {
+            background-color: white;
+        }
+
+        #japao.bandeira > div.circulo {
+            width: 90px;
+            height: 90px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            top: 45px;
+            left: 105px;
+        }
+
+      
+        #alemanha.bandeira {
+            background: linear-gradient(
+                to bottom,
+                black 33.33%,
+                red 33.33%,
+                red 66.66%,
+                yellow 66.66%
+            );
+        }
+
+        
+        #holanda.bandeira {
+            background: linear-gradient(
+                to bottom,
+                red 33.33%,
+                white 33.33%,
+                white 66.66%,
+                blue 66.66%
+            );
+        }
+
+       
+        #italia.bandeira {
+            background: linear-gradient(
+                to right,
+                green 33.33%,
+                white 33.33%,
+                white 66.66%,
+                red 66.66%
+            );
+        }
+
+    
+        #brasil.bandeira {
+            background-color: green;
+        }
+
+        #brasil.bandeira > div.losango {
+            width: 140px;
+            height: 140px;
+            background-color: yellow;
+            position: absolute;
+            top: 20px;
+            left: 80px;
+            transform: rotate(45deg);
+        }
+
+        #brasil.bandeira > div.circulo {
+            width: 75px;
+            height: 75px;
+            background-color: blue;
+            border-radius: 50%;
+            position: absolute;
+            top: 52px;
+            left: 112px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Bandeiras dos Países</h1>
+
+   
+    <a href="#japao">Bandeira Japão</a>
+    <a href="#alemanha">Bandeira Alemanha</a>
+    <a href="#holanda">Bandeira Holanda</a>
+    <a href="#italia">Bandeira Itália</a>
+    <a href="#brasil">Bandeira Brasil</a>
+
+    <hr>
+
+   
+    <h2>Japão</h2>
+    <div class="bandeira" id="japao">
+        <div class="circulo"></div>
+    </div>
+
+   
+    <h2>Alemanha</h2>
+    <div class="bandeira" id="alemanha">
+    </div>
+
+    
+    <h2>Holanda</h2>
+    <div class="bandeira" id="holanda">
+    </div>
+
+ >
+    <h2>Itália</h2>
+    <div class="bandeira" id="italia">
+    </div>
+
+    
+    <h2>Brasil</h2>
+    <div class="bandeira" id="brasil">
+        <div class="losango"></div>
+        <div class="circulo"></div>
+    </div>
+
+</body>
+</html>
